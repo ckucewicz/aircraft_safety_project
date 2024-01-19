@@ -4,7 +4,7 @@ My company is planning to diversify its porfolio by extending to different
 markets. More specifically, my company is looking to invest in airplanes 
 in order for their expansion to different markets to be successful.
 
-##Business Goals:
+## Business Goals:
 This project is focusing on determining the risks of different aircrafts. 
 Specifically, this project has the goal of identifying which aircrafts 
 pose the least amount of potential risk. This information will be used in 
