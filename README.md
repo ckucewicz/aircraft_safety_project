@@ -20,7 +20,8 @@ the least amount of crashes and the least number of casualties
 # Data Understanding
 The National Transportation Safety Board (NTSB) collects data on aviation 
 accidents and incidents that occur in the United States (which include its 
-territories) as well as international waters.
+territories) as well as international waters. This dataset includes 31 features and 88,889 observations/entries.
+
 Each entry in the dataset represents an aircraft involved in an accident 
 (or incident). For each aircraft there is a unique ID associated with the 
 specific accident (or incident) the aircraft was involved in. Additional 
@@ -35,8 +36,15 @@ engines
 
 # Conclusion
 
-## Limitations
+## Limitations 
 
 ## Recommendations
+This analysis leads to three recommendations for choosing the safest aircrafts:
 
+* **Invest in aircraft that have more than two engines and are not classified as a reciprocating engine.** Aircraft with reciprocating engines are prone to more accidents (~90%). Similarly, aircraft with one or two engines were involved in ~98% of reported accidents.
+
+* **Focus training of pilots on the Takeoff and Landing phases.** While there are many phases that pilots must master, accidents during the Takeoff and Landing phases account for almost one-third of all accidents (~31%).
+
+* **Select aircraft made by one of the following companies: Hiller, Schweizer, Stinson, Maule, Enstrom, Luscombe, Aeronca, Air Tractor, Ayres.** Planes made by these aircraft manufacturers were found to hold the least amount of risk based on a combination of their non-fatal rate, deathes per flight, and overal number of deaths.
+  
 ## Next Steps 
