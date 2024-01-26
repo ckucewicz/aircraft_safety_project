@@ -39,6 +39,7 @@ engines
 ## Conclusion
 
 ### Limitations 
+While this dataset offers valuable information, it only includes data on flights which were involved in an accident or incident. As a result, any flights that result in a completely safe flight are not part of this data. Because of this, the analysis was limited to simply making recommendations regarding the least risky aircrafts. A more comprehensive dataset including data on all flights (accidents and no accidents) would provide a more complete analysis with more informed recommendations about the safest aircrafts.
 
 ### Recommendations
 This analysis leads to three recommendations for choosing the safest aircrafts:
