@@ -10,14 +10,14 @@ in order for their expansion to different markets to be successful.
 This project is focusing on determining the risks of different aircrafts. 
 Specifically, this project has the goal of identifying which aircrafts 
 pose the least amount of potential risk. This information will be used in 
-order to provide three recommendations to my company regarding the safest 
+order to provide three recommendations to my company regarding the least risky
 aircrafts to purchase.
 
 ### Business Success Criteria:
 The success criteria for this project will be to provide three 
-recommendations about the safest aircrafts that my company should invest 
-in. For this project, the term "safest" refers to types of aircrafts with 
-the least amount of crashes and the least number of casualties
+recommendations about the least risky aircrafts that my company should invest 
+in. For this project, the term _least risky_ refers to types of aircrafts with 
+the least amount of crashes, the least number of casualties, and the lowest fatality rate. 
 
 ## Data Understanding
 The National Transportation Safety Board (NTSB) collects data on aviation 
@@ -39,7 +39,7 @@ engines
 ## Conclusion
 
 ### Limitations 
-While this dataset offers valuable information, it only includes data on flights which were involved in an accident or incident. As a result, any flights that result in a completely safe flight are not part of this data. Because of this, the analysis was limited to simply making recommendations regarding the least risky aircrafts. A more comprehensive dataset including data on all flights (accidents and no accidents) would provide a more complete analysis with more informed recommendations about the safest aircrafts.
+While this dataset offers valuable information, it only includes data on flights which were involved in an accident or incident. As a result, any flights that result in a completely safe flight are not part of this data. Because of this, the analysis was limited to simply making recommendations regarding the **_least risky_** aircrafts as opposed to recommendations of the safest aircrafts. A more comprehensive dataset including data on all flights (accidents and no accidents) would provide a more complete analysis with more informed recommendations about the safest aircrafts.
 
 ### Recommendations
 This analysis leads to three recommendations for choosing the safest aircrafts:
