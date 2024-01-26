@@ -39,7 +39,7 @@ engines
 ## Conclusion
 
 ### Limitations 
-While this dataset offers valuable information, it only includes data on flights which were involved in an accident or incident. As a result, any flights that result in a completely safe flight are not part of this data. Because of this, the analysis was limited to simply making recommendations regarding the **_least risky_** aircrafts as opposed to recommendations of the safest aircrafts. A more comprehensive dataset including data on all flights (accidents and no accidents) would provide a more complete analysis with more informed recommendations about the safest aircrafts.
+While this dataset offers valuable information, it only includes data on flights which were involved in an accident or incident. As a result, any flights that result in a completely safe flight are not part of this data. Because of this, the analysis was limited to simply making recommendations regarding the _**least risky**_ aircrafts. In other words, the least risky aircraft might not be the safest aircraft from the pool of all possible aircrafts, but within the data we have access to we are restricted to equating the least amount of risk with being the safest aircraft. A more comprehensive dataset including data on all flights (accidents as well as no accidents) would provide a more complete analysis with more informed recommendations about the safest aircrafts.
 
 ### Recommendations
 This analysis leads to three recommendations for choosing the safest aircrafts:
@@ -48,9 +48,10 @@ This analysis leads to three recommendations for choosing the safest aircrafts:
 
 * **Focus training of pilots on the Takeoff and Landing phases.** While there are many phases that pilots must master, accidents during the Takeoff and Landing phases account for almost one-third of all accidents (~31%).
 
-* **Select aircraft made by one of the following companies: Hiller, Schweizer, Stinson, Maule, Enstrom, Luscombe, Aeronca, Air Tractor, Ayres.** Planes made by these aircraft manufacturers were found to hold the least amount of risk based on a combination of their non-fatal rate, deathes per flight, and overal number of deaths.
+* **Select aircraft made by one of the following companies: Hiller, Schweizer, Stinson, Maule, Enstrom, Luscombe, Aeronca, Air Tractor, Ayres.** Planes made by these aircraft manufacturers were found to hold the least amount of risk based on a combination of their non-fatal rate, deaths per flight, and overal number of deaths.
   
 ### Next Steps 
+Moving forward with these recommendations in mind, the company should research price information for aircraft from the recommended companies as the price will also be a major factor in deciding which aircraft(s) to invest in.
 
 ## Additional Information
 View the full analysis in the Jupyter Notebook.
