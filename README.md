@@ -2,44 +2,49 @@
 Author: [Chris Kucewicz](cfkucewicz@gmail.com)
 ## Business Understanding
 ### Background:
-My company is planning to diversify its porfolio by extending to different 
-markets. More specifically, my company is looking to invest in airplanes 
-in order for their expansion to different markets to be successful.
+My company is planning to diversify its porfolio by extending to different markets. More specifically, my company is looking to invest in airplanes in order for their expansion to different markets to be successful.
 
 ### Business Goals:
-This project is focusing on determining the risks of different aircrafts. 
-Specifically, this project has the goal of identifying which aircrafts 
-pose the least amount of potential risk. This information will be used in 
-order to provide three recommendations to my company regarding the least risky
-aircrafts to purchase.
+The primary focus of this data science project is to assess and mitigate the risks associated with various aircraft models. Specifically, we aim to identify and recommend aircraft types that carry the least potential risk. This information is crucial for making informed decisions regarding aircraft investments and ensuring the success of our company's expansion into new markets.
 
 ### Business Success Criteria:
-The success criteria for this project will be to provide three 
-recommendations about the least risky aircrafts that my company should invest 
-in. For this project, the term _least risky_ refers to types of aircrafts with 
-the least amount of crashes, the least number of casualties, and the lowest fatality rate. 
+The success of this project will be measured by providing three well-supported recommendations on the least risky aircraft models for our company to invest in. For this project, the term least risky refers to types of aircrafts with the least amount of crashes, the least number of casualties, and the lowest fatality rate.
 
 ## Data Understanding
-The National Transportation Safety Board (NTSB) collects data on aviation 
-accidents and incidents that occur in the United States (which include its 
-territories) as well as international waters. This dataset includes 31 features and 88,889 observations/entries.
+The National Transportation Safety Board (NTSB) collects data on aviation accidents and incidents that occur in the United States (which include its territories) as well as international waters. This dataset includes 31 features and 88,889 observations or entries.
 
-Each entry in the dataset represents an aircraft involved in an accident 
-(or incident). For each aircraft there is a unique ID associated with the 
-specific accident (or incident) the aircraft was involved in. Additional 
-information is included about each entry, such as the accident (or 
-incident) date, location, and number of injuries, as well as 
-characteristics about the aircraft, such as the make, model, and number of 
-engines
+Each entry in the dataset represents an aircraft involved in an accident (or incident). For each aircraft there is a unique ID associated with the specific accident (or incident) the aircraft was involved in. Additional information is included about each entry, such as the accident (or incident) date, location, and number of injuries, as well as characteristics about the aircraft, such as the make, model, and number of engines.
 
 ### Data Preparation
+In data preparation, I created three functions (`display_df_information()`, `multiple_value_counts()`, and `examine_features()`) to assess data types, NaN values, and entry details. Columns with high NaN values or high cardinality with a uniform distribution were dropped: `Longitude`, `Latitude`, `FAR.Description`, `Schedule`, `Air.carrier`, `Airport.Code`, `Airport.Name`, `Publication.Date`, `Report.Status`, `Registration.Number`, `Investigation.Type`, `Purpose.of.flight`.
+
+Focused on professionally built airplanes, I filtered rows where `Aircraft.Type` was 'airplane' and `Professionally.Built` was 'yes'. `Injury.severity` values were grouped into 'Non-Fatal', 'Fatal', and 'Unavailable', consolidating data from `Total.Fatal.Injuries`.
+
+Using a lambda function, I standardized case sensitivity and removed duplicates in the Make column. Rows with a small percentage of NaN values were dropped using `.dropna()`.
+
+Remaining NaN values in `Total.Fatal.Injuries`, `Total.Serious.Injuries`, `Total.Minor.Injuries`, and `Total.Uninjured` were retained due to their significant count, avoiding noise addition. The cleaned dataframe now has 18 columns and over 65,000 entries.
 
 ## Exploratory Data Analysis
+The following are findings from this analysis:
+
+* There were a total of 64,862 recorded aviation accidents since 1948
+* 18.2% of accidents were classified as ‘fatal’
+* Almost 90% of reported accidents involved aircraft with a Engine Type classified as 'Reciprocating'
+* ~98% of reported accidents involved aircraft with either 1 or 2 engines
+* Almost one-third of accidents (~31%) occurred during either the 'Landing' or 'Takeoff' phases of the flight
+* Based on metrics for lowest fatality rate, least number of deaths, and lowest number of deaths per flight, the safest brands of airplanes include:
+  * Hiller
+  * Schweizer
+  * Stinson
+  * Maule
+  * Enstrom
+  * Luscombe
+  * Aeronca
 
 ## Conclusion
 
 ### Limitations 
-While this dataset offers valuable information, it only includes data on flights which were involved in an accident or incident. As a result, any flights that result in a completely safe flight are not part of this data. Because of this, the analysis was limited to simply making recommendations regarding the _**least risky**_ aircrafts. In other words, the least risky aircraft might not be the safest aircraft from the pool of all possible aircrafts, but within the data we have access to we are restricted to equating the least amount of risk with being the safest aircraft. A more comprehensive dataset including data on all flights (accidents as well as no accidents) would provide a more complete analysis with more informed recommendations about the safest aircrafts.
+While this dataset offers valuable information, it only includes data on flights which were involved in an accident or incident. As a result, any flights that result in a completely safe flight are not part of this data. Because of this, the analysis was limited to simply making recommendations regarding the least risky aircrafts. In other words, the least risky aircraft might not be the safest aircraft from the pool of all possible aircrafts, but within the data we have access to we are restricted to equating the least amount of risk with being the safest aircraft. A more comprehensive dataset including data on all flights (accidents as well as no accidents) would provide a more complete analysis with more informed recommendations about the safest aircrafts.
 
 ### Recommendations
 This analysis leads to three recommendations for choosing the safest aircrafts:
@@ -51,10 +56,13 @@ This analysis leads to three recommendations for choosing the safest aircrafts:
 * **Select aircraft made by one of the following companies: Hiller, Schweizer, Stinson, Maule, Enstrom, Luscombe, Aeronca, Air Tractor, Ayres.** Planes made by these aircraft manufacturers were found to hold the least amount of risk based on a combination of their non-fatal rate, deaths per flight, and overal number of deaths.
   
 ### Next Steps 
-Moving forward with these recommendations in mind, the company should research price information for aircraft from the recommended companies as the price will also be a major factor in deciding which aircraft(s) to invest in.
+With these recommendations in mind, for next steps I would be interested in gathering and looking into two sets of data:
+
+* price data for aircraft from the recommended companies, as the price will be a major factor in deciding which aircraft(s) to invest in
+* pilot training program data to help make an informed decision for where to hire the pilots from
 
 ## Additional Information
-View the full analysis in the Jupyter Notebook.
+View the full analysis in the [Jupyter Notebook](https://github.com/ckucewicz/aircraft_safety_project/blob/master/Notebook.ipynb).
 
 View the presentation
 
