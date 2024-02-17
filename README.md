@@ -72,6 +72,8 @@ View the full analysis in the [Jupyter Notebook](https://github.com/ckucewicz/ai
 
 View the presentation
 
+View the [dashboard](https://public.tableau.com/app/profile/chris.kucewicz/viz/AircraftSafetyDashboard/Dashboard2)
+
 Contact Chris Kucewicz at [cfkucewicz@gmail.com](cfkucewicz@gmail.com) with additional questions.
 
 ## Repository Structure
