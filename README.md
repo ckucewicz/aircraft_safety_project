@@ -77,4 +77,17 @@ View the [dashboard](https://public.tableau.com/app/profile/chris.kucewicz/viz/A
 Contact Chris Kucewicz at [cfkucewicz@gmail.com](cfkucewicz@gmail.com) with additional questions.
 
 ## Repository Structure
+```
+├── analysis_visualizations
+    ├── ...                                   # Visualizations from analysis
+├── presentation_deliverables                 
+    ├── Jupyter Notebook                      # pdf version of notebook used for analysis
+    ├── Phase 1 Final Project Presentation    # non-technical presentation slideshow
+    ├── aircraft_safety_dashboard             # Tableau dashboard
+    └── ckucewicz_aircraft_safety_github.pdf  # pdf version of github repo
+├── AviationData.csv
+├── Notebook.ipynb
+├── README.md
+└── aircraft_safety_cleaned.csv
+```
 
