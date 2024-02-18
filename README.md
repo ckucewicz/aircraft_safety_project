@@ -46,6 +46,11 @@ The following are findings from this analysis:
   * Enstrom
   * Luscombe
   * Aeronca
+  
+### Tableau Dashboard
+![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/presentation_deliverables/aircraft_safety_dashboard.pdf)
+
+View the dashboard on [Tableau Public](https://public.tableau.com/app/profile/chris.kucewicz/viz/AircraftSafetyDashboard/Dashboard2)
 
 ## Conclusion
 
