@@ -70,7 +70,7 @@ With these recommendations in mind, for next steps I would be interested in gath
 ## Additional Information
 View the full analysis in the [Jupyter Notebook](https://github.com/ckucewicz/aircraft_safety_project/blob/master/Notebook.ipynb).
 
-View the presentation
+View the [presentation](https://github.com/ckucewicz/aircraft_safety_project/blob/master/presentation_deliverables/Phase%201%20Final%20Project%20Presentation.pdf)
 
 View the [dashboard](https://public.tableau.com/app/profile/chris.kucewicz/viz/AircraftSafetyDashboard/Dashboard2)
 
