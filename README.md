@@ -27,17 +27,17 @@ Remaining NaN values in `Total.Fatal.Injuries`, `Total.Serious.Injuries`, `Total
 ## Exploratory Data Analysis
 The following are findings from this analysis:
 
-![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/Type%20of%20Engines.png)
+![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/analysis_visualizations/Type%20of%20Engines.png)
 * Almost 90% of reported accidents involved aircraft with a Engine Type classified as 'Reciprocating'
 
- ![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/Number%20of%20Engines.png)
+ ![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/analysis_visualizations/Number%20of%20Engines.png)
 * ~98% of reported accidents involved aircraft with either 1 or 2 engines
 
- ![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/Accidents%20by%20Flight%20Phase.png)
+ ![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/analysis_visualizations/Accidents%20by%20Flight%20Phase.png)
 * Almost one-third of accidents (~31%) occurred during either the 'Landing' or 'Takeoff' phases of the flight
 
-![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/Non-fatal_rates.png)
-![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/death_toll.png)
+![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/analysis_visualizations/Non-fatal_rates.png)
+![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/analysis_visualizations/death_toll.png)
 * Based on metrics for lowest fatality rate, least number of deaths, and lowest number of deaths per flight, the safest brands of airplanes include:
   * Hiller
   * Schweizer
@@ -46,6 +46,11 @@ The following are findings from this analysis:
   * Enstrom
   * Luscombe
   * Aeronca
+  
+### Tableau Dashboard
+![alt text](https://github.com/ckucewicz/aircraft_safety_project/blob/master/presentation_deliverables/aircraft_safety_dashboard.pdf)
+
+View the dashboard on [Tableau Public](https://public.tableau.com/app/profile/chris.kucewicz/viz/AircraftSafetyDashboard/Dashboard2)
 
 ## Conclusion
 
@@ -70,9 +75,24 @@ With these recommendations in mind, for next steps I would be interested in gath
 ## Additional Information
 View the full analysis in the [Jupyter Notebook](https://github.com/ckucewicz/aircraft_safety_project/blob/master/Notebook.ipynb).
 
-View the presentation
+View the [presentation](https://github.com/ckucewicz/aircraft_safety_project/blob/master/presentation_deliverables/Phase%201%20Final%20Project%20Presentation.pdf)
+
+View the [dashboard](https://public.tableau.com/app/profile/chris.kucewicz/viz/AircraftSafetyDashboard/Dashboard2)
 
 Contact Chris Kucewicz at [cfkucewicz@gmail.com](cfkucewicz@gmail.com) with additional questions.
 
 ## Repository Structure
+```
+├── analysis_visualizations
+    ├── ...                                   # Visualizations from analysis
+├── presentation_deliverables                 
+    ├── Jupyter Notebook                      # pdf version of notebook used for analysis
+    ├── Phase 1 Final Project Presentation    # non-technical presentation slideshow
+    ├── aircraft_safety_dashboard             # Tableau dashboard
+    └── ckucewicz_aircraft_safety_github.pdf  # pdf version of github repo
+├── AviationData.csv
+├── Notebook.ipynb
+├── README.md
+└── aircraft_safety_cleaned.csv
+```
 
